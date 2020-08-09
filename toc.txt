@@ -1,0 +1,304 @@
+1 Cover
+3 PREFACE
+6 CONTENTS
+13 Chapter 1: INTRODUCTION
++14 1.1 WELL-POSED LEARNING PROBLEMS
++17 1.2 DESIGNING A LEARNING SYSTEM
+++17 1.2.1 Choosing the Training Experience
+++19 1.2.2 Choosing the Target Function
+++20 1.2.3 Choosing a Representation for the Target Function
+++21 1.2.4 Choosing a Function Approximation Algorithm
++++22 1.2.4.1 ESTIMATING TRAINING VALUES
++++22 1.2.4.2 ADJUSTING THE WEIGHTS
+++23 1.2.5 The Final Design
++26 1.3 PERSPECTIVES AND ISSUES IN MACHINE LEARNING
+++27 1.3.1 Issues in Machine Learning
++28 1.4 HOW TO READ THIS BOOK
++29 1.5 SUMMARY AND FURTHER READING
++30 EXERCISES
++31 REFERENCES
+32 Chapter 2: CONCEPT LEARNING AND THE GENERAL-TO-SPECIFIC ORDERING
++32 2.1 INTRODUCTION
++33 2.2 A CONCEPT LEARNING TASK
+++34 2.2.1 Notation
+++35 2.2.2 The Inductive Learning Hypothesis
++35 2.3 CONCEPT LEARNING AS SEARCH
+++36 2.3.1 General-to-Specific Ordering of Hypotheses
++38 2.4 FIND-S: FINDING A MAXIMALLY SPECIFIC HYPOTHESIS
++41 2.5 VERSION SPACES AND THE CANDIDATE-ELIMINATION ALGORITHM
+++41 2.5.1 Representation
+++42 2.5.2 The LIST-THEN-ELIMINATE Algorithm
+++42 2.5.3 A More Compact Representation for Version Spaces
+++44 2.5.4 CANDIDATE-ELIMINATION Learning Algorithm
+++45 2.5.5 An Illustrative Example
++49 2.6 REMARKS ON VERSION SPACES AND CANDIDATE-ELIMINATION
+++49 2.6.1 Will the CANDIDATE-ELIMINATION Algorithm Converge to the Correct Hypothesis?
+++49 2.6.2 What Training Example Should the Learner Request Next?
+++50 2.6.3 How Can Partially Learned Concepts Be Used?
++51 2.7 INDUCTIVE BIAS
+++52 2.7.1 A Biased Hypothesis Space
+++52 2.7.2 An Unbiased Learner
+++54 2.7.3 The Futility of Bias-Free Learning
++57 2.8 SUMMARY AND FURTHER READING
++59 EXERCISES
++62 REFERENCES
+64 Chapter 3: DECISION TREE LEARNING
++64 3.1 INTRODUCTION
++64 3.2 DECISION TREE REPRESENTATION
++66 3.3 APPROPRIATE PROBLEMS FOR DECISION TREE LEARNING
++67 3.4 THE BASIC DECISION TREE LEARNING ALGORITHM
+++67 3.4.1 Which Attribute Is the Best Classifier?
++++67 3.4.1.1 ENTROPY MEASURES HOMOGENEITY OF EXAMPLES
++++69 3.4.1.2 INFORMATION GAIN MEASURES THE EXPECTED REDUCTION IN ENTROPY
+++71 3.4.2 An Illustrative Example
++72 3.5 HYPOTHESIS SPACE SEARCH IN DECISION TREE LEARNING
++75 3.6 INDUCTIVE BIAS IN DECISION TREE LEARNING
+++75 3.6.1 Restriction Biases and Preference Biases
+++77 3.6.2 Why Prefer Short Hypotheses?
++78 3.7 ISSUES IN DECISION TREE LEARNING
+++78 3.7.1 Avoiding Overfitting the Data
++++81 3.7.1.1 REDUCED ERROR PRUNING
++++83 3.7.1.2 RULE POST-PRUNING
+++84 3.7.2 Incorporating Continuous-Valued Attributes
+++85 3.7.3 Alternative Measures for Selecting Attributes
+++87 3.7.4 Handling Training Examples with Missing Attribute Values
+++87 3.7.5 Handling Attributes with Differing Costs
++88 3.8 SUMMARY AND FURTHER READING
++89 EXERCISES
++90 REFERENCES
+93 Chapter 4: ARTIFICIAL NEURAL NETWORKS
++93 4.1 INTRODUCTION
+++94 4.1.1 Biological Motivation
++94 4.2 NEURAL NETWORK REPRESENTATIONS
++95 4.3 APPROPRIATE PROBLEMS FOR NEURAL NETWORK LEARNING
++98 4.4 PERCEPTRONS
+++98 4.4.1 Representational Power of Perceptrons
+++100 4.4.2 The Perceptron Training Rule
+++101 4.4.3 Gradient Descent and the Delta Rule
++++102 4.4.3.1 VISUALIZING THE HYPOTHESIS SPACE
++++103 4.4.3.2 DERIVATION OF THE GRADIENT DESCENT RULE
++++104 4.4.3.3 STOCHASTIC APPROXIMATION TO GRADIENT DESCENT
+++106 4.4.4 Remarks
++107 4.5 MULTILAYER NETWORKS AND THE BACKPROPAGATION ALGORITHM
+++107 4.5.1 A Differentiable Threshold Unit
+++109 4.5.2 The BACKPROPAGATION Algorithm
++++112 4.5.2.1 ADDING MOMENTUM
++++112 4.5.2.2 LEARNING IN ARBITRARY ACYCLIC NETWORKS
+++113 4.5.3 Derivation of the BACKPROPAGATION Rule
++116 4.6 REMARKS ON THE BACKPROPAGATION ALGORITHM
+++116 4.6.1 Convergence and Local Minima
+++117 4.6.2 Representational Power of Feedforward Networks
+++118 4.6.3 Hypothesis Space Search and Inductive Bias
+++118 4.6.4 Hidden Layer Representations
+++120 4.6.5 Generalization, Overfitting, and Stopping Criterion
++124 4.7 AN ILLUSTRATIVE EXAMPLE: FACE RECOGNITION
+++124 4.7.1 The Task
+++125 4.7.2 Design Choices
+++128 4.7.3 Learned Hidden Representations
++129 4.8 ADVANCED TOPICS IN ARTIFICIAL NEURAL NETWORKS
+++129 4.8.1 Alternative Error Functions
+++131 4.8.2 Alternative Error Minimization Procedures
+++131 4.8.3 Recurrent Networks
+++133 4.8.4 Dynamically Modifying Network Structure
++134 4.9 SUMMARY AND FURTHER READING
++136 EXERCISES
++138 REFERENCES
+140 Chapter 5: EVALUATING HYPOTHESES
++140 5.1 MOTIVATION
++141 5.2 ESTIMATING HYPOTHESIS ACCURACY
+++142 5.2.1 Sample Error and True Error
+++143 5.2.2 Confidence Intervals for Discrete-Valued Hypotheses
++144 5.3 BASICS OF SAMPLING THEORY
+++145 5.3.1 Error Estimation and Estimating Binomial Proportions
+++147 5.3.2 The Binomial Distribution
+++148 5.3.3 Mean and Variance
+++149 5.3.4 Estimators, Bias, and Variance
+++150 5.3.5 Confidence Intervals
+++153 5.3.6 Two-sidedand One-sidedBounds
++154 5.4 A GENERAL APPROACH FOR DERIVING CONFIDENCE INTERVALS
+++154 5.4.1 Central Limit Theorem
++155 5.5 DIFFERENCE IN ERROR OF TWO HYPOTHESES
+++156 5.5.1 Hypothesis Testing
++157 5.6 COMPARING LEARNING ALGORITHMS
+++160 5.6.1 Paired t Tests
+++161 5.6.2 Practical Considerations
++162 5.7 SUMMARY AND FURTHER READING
++164 EXERCISES
++164 REFERENCES
+166 Chapter 6: BAYESIAN LEARNING
++166 6.1 INTRODUCTION
++168 6.2 BAYES THEOREM
+++169 6.2.1 An Example
++170 6.3 BAYES THEOREM AND CONCEPT LEARNING
+++171 6.3.1 Brute-Force Bayes Concept Learning
+++174 6.3.2 MAP Hypotheses and Consistent Learners
++176 6.4 MAXIMUM LIKELIHOOD AND LEAST-SQUARED ERROR HYPOTHESES
++179 6.5 MAXIMUM LIKELIHOOD HYPOTHESES FOR PREDICTING PROBABILITIES
+++182 6.5.1 Gradient Search to Maximize Likelihood in a Neural Net
++183 6.6 MINIMUM DESCRIPTION LENGTH PRINCIPLE
++186 6.7 BAYES OPTIMAL CLASSIFIER
++188 6.8 GIBBS ALGORITHM
++189 6.9 NAIVE BAYES CLASSIFIER
+++190 6.9.1 An Illustrative Example
++++191 6.9.1.1 ESTIMATING PROBABILITIES
++192 6.10 AN EXAMPLE: LEARNING TO CLASSIFY TEXT
+++194 6.10.1 Experimental Results
++196 6.11 BAYESIAN BELIEF NETWORKS
+++197 6.11.1 Conditional Independence
+++198 6.11.2 Representation
+++199 6.11.3 Inference
+++200 6.11.4 Learning Bayesian Belief Networks
+++200 6.11.5 Gradient Ascent Training of Bayesian Networks
+++202 6.11.6 Learning the Structure of Bayesian Networks
++203 6.12 THE EM ALGORITHM
+++203 6.12.1 Estimating Means of k Gaussians
+++206 6.12.2 General Statement of EM Algorithm
+++207 6.12.3 Derivation of the k Means Algorithm
++209 6.13 SUMMARY AND FURTHER READING
++210 EXERCISES
++211 REFERENCES
+213 Chapter 7:COMPUTATIONAL LEARNING THEORY
++213 7.1 INTRODUCTION
++215 7.2 PROBABLY LEARNING AN APPROXIMATELY CORRECT HYPOTHESIS
+++215 7.2.1 The Problem Setting
+++216 7.2.2 Error of a Hypothesis
+++217 7.2.3 PAC Learnability
++219 7.3 SAMPLE COMPLEXITY FOR FINITE HYPOTHESIS SPACES
+++222 7.3.1 Agnostic Learning and Inconsistent Hypotheses
+++223 7.3.2 Conjunctions of Boolean Literals Are PAC-Learnable
+++224 7.3.3 PAC-Learnability of Other Concept Classes
++++224 7.3.3.1 UNBIASED LEARNERS
++++225 7.3.3.2 K-TERM DNF AND K-CNF CONCEPTS
++226 7.4 SAMPLE COMPLEXITY FOR INFINITE HYPOTHESIS SPACES
+++226 7.4.1 Shattering a Set of Instances
+++227 7.4.2 The Vapnik-Chervonenkis Dimension
++++227 7.4.2.1 ILLUSTRATIVE EXAMPLES
+++229 7.4.3 Sample Complexity and the VC Dimension
+++230 7.4.4 VC Dimension for Neural Networks
++232 7.5 THE MISTAKE BOUND MODEL OF LEARNING
+++232 7.5.1 Mistake Bound for the FIND-S Algorithm
+++233 7.5.2 Mistake Bound for the HALVING Algorithm
+++234 7.5.3 Optimal Mistake Bounds
+++235 7.5.4 WEIGHTED-MAJORITY Algorithm
++237 7.6 SUMMARY AND FURTHER READING
++239 EXERCISES
++241 REFERENCES
+242 Chapter 8: INSTANCE-BASED LEARNING
++242 8.1 INTRODUCTION
++243 8.2 k-NEAREST NEIGHBOR LEARNING
+++245 8.2.1 Distance-Weighted NEAREST NEIGHBOR Algorithm
+++246 8.2.2 Remarks on k-NEAREST NEIGHBOR Algorithm
+++248 8.2.3 A Note on Terminology
++248 8.3 LOCALLY WEIGHTED REGRESSION
+++249 8.3.1 Locally Weighted Linear Regression
+++250 8.3.2 Remarks on Locally Weighted Regression
++250 8.4 RADIAL BASIS FUNCTIONS
++252 8.5 CASE-BASED REASONING
++256 8.6 REMARKS ON LAZY AND EAGER LEARNING
++257 8.7 SUMMARY AND FURTHER READING
++259 EXERCISES
++259 REFERENCES
+261 Chapter 9: GENETIC ALGORITHMS
++261 9.1 MOTIVATION
++262 9.2 GENETIC ALGORITHMS
+++264 9.2.1 Representing Hypotheses
+++265 9.2.2 Genetic Operators
+++267 9.2.3 Fitness Function and Selection
++268 9.3 AN ILLUSTRATIVE EXAMPLE
+++270 9.3.1 Extensions
++271 9.4 HYPOTHESIS SPACE SEARCH
+++272 9.4.1 Population Evolution and the Schema Theorem
++274 9.5 GENETIC PROGRAMMING
+++274 9.5.1 Representing Programs
+++275 9.5.2 Illustrative Example
+++277 9.5.3 Remarks on Genetic Programming
++278 9.6 MODELS OF EVOLUTION AND LEARNING
+++278 9.6.1 Lamarckian Evolution
+++279 9.6.2 Baldwin Effect
++280 9.7 PARALLELIZING GENETIC ALGORITHMS
++280 9.8 SUMMARY AND FURTHER READING
++282 EXERCISES
++282 REFERENCES
+286 Chapter 10: LEARNING SETS OF RULES
++286 10.1 INTRODUCTION
++287 10.2 SEQUENTIAL COVERING ALGORITHMS
+++289 10.2.1 General to Specific Beam Search
+++291 10.2.2 Variations
++292 10.3 LEARNING RULE SETS: SUMMARY
++295 10.4 LEARNING FIRST-ORDER RULES
+++295 10.4.1 First-Order Horn Clauses
+++296 10.4.2 Terminology
++297 10.5 LEARNING SETS OF FIRST-ORDER RULES: FOIL
+++299 10.5.1 Generating Candidate Specializations in FOIL
+++300 10.5.2 Guiding the Search in FOIL
+++302 10.5.3 Learning Recursive Rule Sets
+++302 10.5.4 Summary of FOIL
++303 10.6 INDUCTION AS INVERTED DEDUCTION
++305 10.7 INVERTING RESOLUTION
+++308 10.7.1 First-Order Resolution
+++309 10.7.2 Inverting Resolution: First-Order Case
+++310 10.7.3 Summary of Inverse Resolution
+++311 10.7.4 Generalization, θ-Subsumption, and Entailment
+++312 10.7.5 PROGOL
++313 10.8 SUMMARY AND FURTHER READING
++315 EXERCISES
++316 REFERENCES
+319 Chapter 11: ANALYTICAL LEARNING
++319 11.1 INTRODUCTION
+++322 11.1.1 Inductive and Analytical Learning Problems
++324 11.2 LEARNING WITH PERFECT DOMAIN THEORIES: PROLOG-EBG
+++325 11.2.1 An Illustrative Trace
++++325 11.2.1.1 EXPLAIN THE TRAINING EXAMPLE
++++326 11.2.1.2 ANALYZE THE EXPLANATION
++++330 11.2.1.3 REFINE THE CURRENT HYPOTHESIS
++331 11.3 REMARKS ON EXPLANATION-BASED LEARNING
+++332 11.3.1 Discovering New Features
+++333 11.3.2 Deductive Learning
+++334 11.3.3 Inductive Bias in Explanation-Based Learning
+++335 11.3.4 Knowledge Level Learning
++337 11.4 EXPLANATION-BASED LEARNING OF SEARCH CONTROL KNOWLEDGE
++340 11.5 SUMMARY AND FURTHER READING
++342 EXERCISES
++343 REFERENCES
+346 Chapter 12: COMBINING INDUCTIVE AND ANALYTICAL LEARNING
++346 12.1 MOTIVATION
++349 12.2 INDUCTIVE-ANALYTICAL APPROACHES TO LEARNING
+++349 12.2.1 The Learning Problem
+++351 12.2.2 Hypothesis Space Search
++352 12.3 USING PRIOR KNOWLEDGE TO INITIALIZE THE HYPOTHESIS
+++352 12.3.1 The KBANN Algorithm
+++353 12.3.2 An Illustrative Example
+++356 12.3.3 Remarks
++358 12.4 USING PRIOR KNOWLEDGE TO ALTER THE SEARCH OBJECTIVE
+++359 12.4.1 The TANGENTPROP Algorithm
+++361 12.4.2 An Illustrative Example
+++362 12.4.3 Remarks
+++363 12.4.4 The EBNN Algorithm
+++367 12.4.5 Remarks
++369 12.5 USING PRIOR KNOWLEDGE TO AUGMENT SEARCH OPERATORS
+++369 12.5.1 The FOCL Algorithm
+++372 12.5.2 Remarks
++373 12.6 STATE OF THE ART
++374 12.7 SUMMARY AND FURTHER READING
++375 EXERCISES
++376 REFERENCES
+379 Chapter 13: REINFORCEMENT LEARNING
++379 13.1 INTRODUCTION
++382 13.2 THE LEARNING TASK
++385 13.3 Q LEARNING
+++386 13.3.1 The Q Function
+++386 13.3.2 An Algorithm for Learning Q
+++388 13.3.3 An Illustrative Example
+++389 13.3.4 Convergence
+++391 13.3.5 Experimentation Strategies
+++391 13.3.6 Updating Sequence
++393 13.4 NONDETERMINISTIC REWARDS AND ACTIONS
++395 13.5 TEMPORAL DIFFERENCE LEARNING
++396 13.6 GENERALIZING FROM EXAMPLES
++397 13.7 RELATIONSHIP TO DYNAMIC PROGRAMMING
++398 13.8 SUMMARY AND FURTHER READING
++400 EXERCISES
++400 REFERENCES
+403 APPENDIX: NOTATION
+405 INDEXES
++406 SUBJECT INDEX
